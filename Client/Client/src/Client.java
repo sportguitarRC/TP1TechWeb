@@ -6,11 +6,11 @@ public class Client {
 	public static void StartClient() throws Exception
 	{
 		ObjectOutputStream out;
-		ObjectInputStream in;
 		PrintWriter print;
 		
 		int port = 80;
-		String adresse = JOptionPane.showInputDialog("Entrer l'adresse web:");
+		String adresse = JOptionPane.showInputDialog("Entrer l'adresse du site web ( Ex : www.uqac.ca )");
+		String page = JOptionPane.showInputDialog("Entrez la page recherchee ( Ex : etudiants/");
 		try
 		{
 			InetAddress inetAdd = InetAddress.getByName(adresse);
@@ -22,6 +22,7 @@ public class Client {
 			
 			try
 			{
+				print.println("Get /" + page + " HTTP/1.1");
 				print.println("Get / HTTP/1.1");
 				print.println("Host: " + adresse);
 				print.println("Accept: text/plain , image/*");
