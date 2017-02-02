@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+
+<script type="text/javascript">
+	function popUp(url, hauteur, largeur)
+    	{
+    		var param = "height=" + hauteur + ",width=" + largeur + ",scrollbars=1,toolbar=0,left=300,top=300,screenX=0,screenY=100";
+		var autorisationWindow = window.open(url,"autorisationWindow",param);
+		autorisationWindow.focus();
+	}
+</script>                       
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<META HTTP-EQUIV="content-language" CONTENT="FR-CA" />
+	<META NAME="keywords" CONTENT="CHICOUTIMI,UNIVERSITE,QUEBEC,CANADA,ETUDES,FRANCAIS,UQAC,SAGUENAY" />
+	<META NAME="description" CONTENT="L'université du Québec à Chicoutimi dispense des programmes d'études variés de niveaux baccalauréat, maitrise et doctorat" />
+	<meta name="verify-v1" content="Pw/W6GMlRcZ6vmZf7cdynGUXwtSxA2q4PPLwxnOGkP4=" >
+    <META NAME="robots" CONTENT="INDEX,FOLLOW" />
+<title>Portail des étudiants - Université du Québec à Chicoutimi</title>
+<link href="http://www.uqac.ca/css/general.css" rel="stylesheet" type="text/css"  media="screen" />
+<link href="http://www.uqac.ca/css/niveau01.css" rel="stylesheet" type="text/css"  media="screen" />
+<link href="http://www.uqac.ca/css/etudiants.css" rel="stylesheet" type="text/css"  media="screen" />
+<link href="http://www.uqac.ca/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="apple-touch-icon" href="http://www.uqac.ca/images/ios-icon.png" />
+</head>
+<style type="text/css">
+
+#retour_accueil a {
+				 
+				z-index:1;
+				display:block;
+				position:absolute;
+				top:20px;
+				height:60px;
+				width:350px;
+				border:0;}
+
+</style>
+<body>
+
+<div id="cadre">
+		  <div id="entete">
+		    <div id="retour_accueil"><a href="http://www.uqac.ca/"></a></div>
+		  
+		  	<div id="menu_entete">
+<div class="menuverttop"><a href="http://www.uqac.ca/uqac_en_bref/pour_nous_joindre.php" title="Nous joindre">Nous joindre</a></div> 
+<div class="menuverttop"><a href="http://www.uqac.ca/uqac_en_bref/a_propos_du_site/plan.php" title="Plan du site">Plan du site</a></div>
+ 
+<div class="menuverttop"><a href="http://repertoire.uqac.ca/" title="Répertoire téléphonique">Répertoire</a></div>
+<div class="menuverttop"><a href="http://bibliotheque.uqac.ca" title="Bibliothèque">Bibliothèque</a></div>
+<div class="menuverttop"><a href="http://www.uqac.ca/" title="Retour à l'accueil">Accueil</a></div>
+	 		</div>
+			
+
+				
+			<div id="recherche">
+			
+
+			     
+			    	
+<script type="text/javascript">
+
+ function verif_rech()
+{	
+	if (document.form_rech.txt_rech.value == "" || document.form_rech.txt_rech.value == "Rechercher")
+		alert ("Vous devez remplir le champ de recherche...");
+	else
+	{
+		if (document.form_rech.txt_rech.value.length < 2)
+			alert ("Vous devez entrer plus de 2 caractères pour la recherche...");
+		else
+		{	
+			if(document.form_rech.rb_type_rech[1].checked == true)
+			{
+				document.form_rech.q.value = document.form_rech.txt_rech.value;
+				document.form_rech.action = "http://ca.findloo.com/fr/search";
+			}
+			else
+			{
+				document.form_rech.q.value = "";
+				document.form_rech.action = "http://www.uqac.ca/moteur_recherche/demarrer.php";
+			}
+			
+			document.form_rech.submit();
+		}
+	}
+}
+
+function focus_rech()
+{
+	if(document.form_rech.txt_rech.value == "Rechercher")
+		document.form_rech.txt_rech.value='';
+	
+	var champ = document.getElementById("rech_top");
+	champ.className = "champ_color";
+}
+
+</script> 
+
+<div id="champ_recherche">
+
+ <form name='form_rech' method="get" action="http://www.uqac.ca/moteur_recherche/demarrer.php" onsubmit="return false;">	
+<input type="hidden" name="q" />
+<input type="hidden" name="ie" value="ISO-8859-1" />
+	
+<div id="champ"><input id="rech_top" name="txt_rech" type="text" value="Rechercher" onfocus="focus_rech();" /></div> 
+<div id="bouton"><input name="bouton" type="image" src="http://www.uqac.ca/images/rechercher.gif" onclick="verif_rech();" /> </div>
+<div id="type_rech">
+<p><input type="radio" name="rb_type_rech" checked="checked" value='' />uqac.ca</p>
+<p><input type="radio" name="rb_type_rech" value='web' />web</p>
+</div>
+
+</form>	 
+
+</div>
+
+<!--
+<span>
+<a href="http://www.uqac.ca/recherche" title="Recherche avancée">Recherche avancée</a>
+</span>
+-->	
+			
+			</div>
+			
+		  	<div id="logo">
+						<h1>UQAC</h1>
+						 <h2>Université du Québec à Chicoutimi - </h2>
+						   <h3>Libre de voir plus loin</h3>
+		    </div>
+						
+				
+						
+			 		
+		  
+
+  </div>
+			  
+			 
+
+        
+		   
+		    <div id="contenu">
+
+<div id="cadre_etudiants">
+					 
+<!--miettes de pain-->
+  <div id="miettes_de_pain">
+					  Vous êtes ici :<br /> <a href="http://www.uqac.ca/">Accueil</a> 
+ > <strong>etudiants</strong>					  </div>
+                      
+ <h1 class="titre_portail">Étudiants</h1>
+  <img src="entete_portail_etudiants.png" width="763" height="47" />
+
+
+<div id="col_1">
+  
+				   		 <div id="clic_rapide">
+					 
+                      <h4><span>Clic rapide</span></h4>
+					  <ul>
+					  <li><a href="http://www.uqac.ca/direction_services/registraire/calendriers.php">Calendriers universitaires</a></li>
+					  <li><a href="courriel.html">Courrier électronique</a></li>
+						<li><a href="http://repartiteur.uqac.ca/repartir_app/repartir.php?app=dossier_etudiant/ ">Dossier étudiant</a></li>
+					  <li><a href="http://cours.uqac.ca/">Horaire des cours offerts </a></li>
+                       
+                      
+                      
+                      
+					  </ul>
+    </div>		
+    <div id="vidpromo">
+					  
+					  	<!--vous avez des questions-->
+					  <span>Découvrir l'UQAC </span> 
+					  <a href="http://www.uqac.ca/je_veux_etudier/video.php" target="_top"><span>Cliquez-ici !</span> </a>   
+                      
+    </div>
+    
+         
+                    <div id="questions">
+					  
+					  	<!--vous avez des questions-->
+					  <span>Vous avez des questions? </span> 
+					  <a href="http://repertoire.uqac.ca/Fiche.aspx?id=IyYwKjUbURU1&link=1" target="repertoire"><span>Écrivez-nous</span> </a>   
+                      
+    </div>
+                         
+                         
+              <div id="covoq"> 
+               <a href="http://repartiteur.uqac.ca/repartir_app/repartir.php?app=montrajet/">
+          <img src="https://www.uqac.ca/etudiants/logo-montrajet-petit.png" alt="Mon Trajet" longdesc="http://repartiteur.uqac.ca/repartir_app/repartir.php?app=montrajet/" />
+     
+                </a>
+    </div>
+                            
+                            
+                            
+                            
+  </div>
+  
+  
+  
+				  <div id="col_2">
+                  
+                  
+                  <div id="outils">
+                          <h4>Outils</h4>
+                                  <ul>
+                              <li><a href="http://www.uqac.ca/direction_services/secretariat_general/manuel/index.pdf">Manuel de gestion</a></li>    				  	  
+                              <li><a href="http://moodle.uqac.ca/">Moodle</a> </li>
+                              <!--<li><a href="http://moodle3.uqac.ca">Moodle3</a> (projet &eacute;t&eacute; 2016)<br />
+                                &ndash; <a href="http://www.uqac.ca/tutoriel/guides/moodle3_etudiants.pdf">Comment acc&eacute;der &agrave; Moodle3</a></li>  --> 
+                              <li><a href="http://www.uqac.ca/tutoriels">Tutoriels</a></li>
+
+
+                                
+                          </ul>
+                                                       
+                    </div>
+                  
+                  
+								
+				  
+										 <div id="services">
+					  <h4>Services</h4>
+				   
+				
+					  <ul>
+						<li><a href="http://www.uqac.ca/direction_services/registraire/">Bureau du registraire </a></li>
+						  <li><a href="http://www.coopuqac.com/" target="_blank">Coop&eacute;rative &eacute;tudiante</a></li>
+						  <li><a href="http://sports.uqac.ca/">Pavillon sportif</a></li>
+					  	<li><a href="http://www.uqac.ca/departements/regroupements_programmes.php">Regroupement de programmes </a></li>
+						  <li><a href="http://sae.uqac.ca/">Services aux étudiants </a></li>
+						<li><a href="http://www.uqac.ca/direction_services/srf/">Service des ressources financières</a></li>
+						  <li><a href="http://www.uqac.ca/direction_services/sti/">Service des technologies<br /> de l’information </a></li>
+				  </ul>
+					
+                    <br/>
+                     <h4>Formulaires</h4>
+                    <ul>
+                                
+							 
+                            
+                           <li><a href="http://formulaires.uqac.ca/locaux"> Réservation de locaux </a></li> 
+
+							<li><a href="http://www.uqac.ca/fers/formulaire-de-reservation/"> Réservation Simoncouche</a></li>
+                            <li><a href="http://formulaires.uqac.ca/registraire/demande-de-documents-officiels-etudiant/">Demande de documents officiels </a></li>
+							 </ul></div>
+                    
+  </div>
+  
+  
+  
+  
+				  <div id="col_3">
+				 
+							<div id="liens_utiles">
+					  
+					  <h4>Autres liens utiles</h4>
+						  
+					<ul>
+                    	  <li><a href="http://www.uqac.ca//admissionenligne">Admission en ligne</a> </li>	
+					  <li><a href="http://mageuqac.com/bottin-des-assos/" target="_blank">Associations étudiantes</a> </li>
+					  <li><a href="http://www.uqac.ca/direction_services/sie/assurance_etudiant.php">Assurances</a></li>
+                   <li><a href="http://blog.uqac.ca">Blogues de l'UQAC</a></li>
+					  <li><a href="http://sae.uqac.ca/aide-financiere/">Bourses et aide financière</a></li>
+					   <li><a href="http://www.uqac.ca/ccoe">Centre de la communication<br /> orale et écrite</a></li> 
+					  <li><a href="http://www.uqac.ca/programmes/centres_etudes.php">Centres d'études universitaires</a> </li>
+                   <li><a href="http://www.uqac.ca/harcelement/">Comité contre le harcèlement et la violence</a></li>
+					  <li><a href="http://constellation.uqac.ca" target="_blank">Constellation</a> - Le dépôt institutionnel</li>
+					  <li><a href="http://www.uqac.ca/droitauteur/">Droit d'auteur</a></li>
+					   <li><a href="http://www.uqac.ca/direction_services/registraire/adm_inscriptions/frais_scolarite.php">Droits de scolarité et autres frais</a> </li>
+					   <li><a href="http://www.uqac.ca/international/echanges/">Études à l’étranger</a></li>
+      
+					 <li><a href="http://inuk.uqac.ca">Sport universitaire</a> </li>	
+					  <li><a href="http://www.uqac.ca/programmes/">Programmes d'études</a></li>					  
+					  <li><a href="http://www.uqac.ca/stages_et_emplois/">Stages et emplois</a></li>
+
+				  
+                  <!--<li><a href="http://surlaroute.uqac.ca">Sur la route</a>, <br/>blog de<br/> Justine Lévesque</li>-->
+                     <li><a href="http://wprodl.uqac.ca/calcul_cout/index.html">Simulateur du calcul du coût d'un trimestre</a></li>
+                  </ul>
+				  </div> <!--fin lien utiles-->
+				  
+				  
+				
+  
+				  </div>
+				  
+		  <div id="col_4">
+          			
+							  <div id="calendrier">
+								<h3>Dates à retenir</h3>
+                                
+								 <div id="iframe_calendrier">	    
+					 <h6>Mercredi 01 février</h6>
+<ul>
+<li>Date limite pour déposer une demande d'admission aux programmes contingentés de cycles supérieurs - Automne 2017&nbsp;<a href='http://www.uqac.ca/direction_services/registraire/calendrier/calendrier17a.pdf' target='_blank'>>>></a></li>
+<li>Vision d'(en)semble, une exposition de la Boîte Rouge Vif  |  Galerie L'Œuvre de l'Autre&nbsp;<a href='http://www.uqac.ca/galerie/' target='_blank'>>>></a></li>
+<li>Période de mise en candidature pour participer à la 5e édition de l’ Université d’été sur la francophonie des Amériques qui se déroulera du 5 au 11 juin 2017.&nbsp;<a href='http://www.francophoniedesameriques.com/universitedete/participer-a-luniversite-dete/' target='_blank'>>>></a></li>
+</ul>
+<h6>Mardi 07 février</h6>
+<ul>
+<li>Réunion CERC</li>
+<li>Exposition photographique présentée par la quinzième cohorte en éco-conseil de l’UQAC : L’énergie : où va le monde ? - Bibliothèque de Jonquière - Du 7 février au 19 mars 2017</li>
+</ul>
+<h6>Mercredi 08 février</h6>
+<ul>
+<li>Date limite de paiement des frais de scolarité - Hiver 2017&nbsp;<a href='http://www.uqac.ca/direction_services/registraire/calendrier/calendrier17h.pdf' target='_blank'>>>></a></li>
+</ul>
+<h6>Jeudi 09 février</h6>
+<ul>
+<li>Date limite d'inscription au 31e Concours interuniversitaire de photographie&nbsp;<a href='https://www.facebook.com/events/1401168436564063/' target='_blank'>>>></a></li>
+<li>Date limite d'inscription au 8e Concours interuniversitaire de BD&nbsp;<a href='https://www.facebook.com/events/109570909507435/' target='_blank'>>>></a></li>
+</ul>
+<h6>Vendredi 10 février</h6>
+<ul>
+<li>Date limite d'inscription à UQAC en spectacle&nbsp;<a href='https://www.facebook.com/events/215742345530287/' target='_blank'>>>></a></li>
+<li>9 h&nbsp;&ndash;&nbsp;Atelier du CEE-UQAC « L'art de bien monter ses prévisions financières »&nbsp;<a href='http://www.uqac.ca/ceeuqac/index/chicoutimi/ateliers?iref=index%2Fateliers&id_lists_item6=183' target='_blank'>>>></a></li>
+</ul>
+<h6>Dimanche 12 février</h6>
+<ul>
+<li>Passation du test de français de l'UQAC (TF-UQAC)&nbsp;<a href='http://www.uqac.ca/direction_services/registraire/test_francais.php' target='_blank'>>>></a></li>
+</ul>
+<h6>Mercredi 15 février</h6>
+<ul>
+<li>Conseil des études (UQ)</li>
+</ul>
+<h6>Jeudi 16 février</h6>
+<ul>
+<li>19 h - Conférence Le Sénégal : une véritable porte d’entrée sur l’Afrique - Salle Marguerite-Tellier, Bibliothèque publique de Chicoutimi</li>
+<li>18 h 30&nbsp;&ndash;&nbsp;Maradon des Inuk (5e édition)  |  Pavillon sportif&nbsp;<a href='http://sports.uqac.ca/inuk/maradon-des-inuk/' target='_blank'>>>></a></li>
+</ul>
+	
+					
+                    
+                 				  <!-- <p><a href="http://www.uqac.ca/calendriers/calendrier.php?cal=etudiant">Calendrier Complet</a></p>-->
+					 	
+							</div> <!--iframe calendrier-->
+		   			 </div> <!--calendrier-->
+		 
+							
+							<div id="publicites_portails">
+				<!--publicités-->
+						             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+
+<script type="text/javascript" src="http://www.uqac.ca/publicites/rotationpub.js"></script>
+
+<div id="publicites"></div>
+
+<script type="text/javascript">	
+	//javascript
+	var publicite = new RotationPub('publicite','<playlist version=\"1\" xmlns=\"http://xspf.org/ns/0/\">	<trackList>		<track>			<title>Universite d\'ete</title>			<creator>BAP</creator>			<location>http://www.uqac.ca/images/publicites/pub1484839387.jpg</location>			<info>http://www.francophoniedesameriques.com/universitedete/universite-ete-2017/</info>			<delay>5</delay>		</track>		<track>			<title>Bourses Fonds UQAC</title>			<creator>SAE</creator>			<location>http://www.uqac.ca/images/publicites/pub1484843622.jpg</location>			<info>http://sae.uqac.ca/bourses</info>			<delay>5</delay>		</track>		<track>			<title>Maradon</title>			<creator>Inuk</creator>			<location>http://www.uqac.ca/images/publicites/pub1481032197.jpg</location>			<info>http://sports.uqac.ca/inuk/maradon-des-inuk/</info>			<delay>5</delay>		</track>		<track>			<title>Visite sur mesure</title>			<creator>SAE</creator>			<location>http://www.uqac.ca/images/publicites/pub1484928096.jpg</location>			<info>http://sae.uqac.ca/portesouvertes/surmesure/</info>			<delay>5</delay>		</track>		<track>			<title>Metier d\'etudiant</title>			<creator>SAE</creator>			<location>http://www.uqac.ca/images/publicites/pub1482415127.jpg</location>			<info>http://sae.uqac.ca/vie-etudiante/metier-detudiant/</info>			<delay>5</delay>		</track>	</trackList></playlist>'); //nom objet et contenu xml
+	publicite.SetWidth(280);
+	publicite.SetHeight(90);
+	publicite.SetWaitTime(4);
+	
+	publicite.ShowPub('publicites'); //id du conteneur
+</script>
+						</div> <!--publicites-->
+          
+		</div>
+
+</div> 
+  
+
+</div> <!--fin de contenu-->
+</div> <!--fin de cadre-->
+
+<div id="pied">
+<span>
+<!--Dernière mise à jour de cette page :  - --><a href="http://www.uqac.ca/uqac_en_bref/a_propos_du_site/bienvenue.php">À propos du site Web institutionnel</a> -  © UQAC 2017.  Tous droits réservés.
+</span>
+</div>
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	_uacct="UA-66360-1";
+	urchinTracker();
+	</script>
+ 
+</body>
+</html>
+	
+
+ 
