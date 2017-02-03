@@ -8,7 +8,7 @@ public class Client {
 		ObjectOutputStream out; // stream de sortie pour envoyer une requete
 		PrintWriter print; // point de contact avec le serveur distant
 		
-		int port = 80; // port utilisél, 80 car requete html
+		int port = 80; // port utilisé, 80 car requete html
 		String adresse = JOptionPane.showInputDialog("Entrer l'adresse du site web ( Ex : www.uqac.ca )"); // Domaine recherché par le dns
 		String page = JOptionPane.showInputDialog("Entrez la page recherchee ( Ex : etudiants/"); // Emplacement de la page voulue sur le serveur
 		try
