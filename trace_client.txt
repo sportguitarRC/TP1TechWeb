@@ -1,3 +1,27 @@
+Démarrage du programme.
+Entrée dans StartClient() .
+Recherche de l'adresse par serveur DNS.
+IP : 132.212.11.8
+Requête HTML :
+Get /etudiants/ HTTP/1.1
+Host: www.uqac.ca
+Accept: text/plain , image/*
+
+Création de page.html
+HTTP/1.0 200 OK
+Date: Sun, 05 Feb 2017 19:15:31 GMT
+Server: Apache/2.2.22 (Unix) mod_ssl/2.2.22 OpenSSL/1.0.1e-fips DAV/2 PHP/5.2.17
+X-Powered-By: PHP/5.2.17
+Set-Cookie: PHPSESSID=sgol3f28crd8n3o0488b382ae6; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Type: text/html
+X-Cache: MISS from w3rep.uqac.ca
+X-Cache-Lookup: MISS from w3rep.uqac.ca:80
+Via: 1.0 w3rep.uqac.ca (squid/3.1.23)
+Connection: close
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -18,10 +42,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<META HTTP-EQUIV="content-language" CONTENT="FR-CA" />
 	<META NAME="keywords" CONTENT="CHICOUTIMI,UNIVERSITE,QUEBEC,CANADA,ETUDES,FRANCAIS,UQAC,SAGUENAY" />
-	<META NAME="description" CONTENT="L'universitÃ© du QuÃ©bec Ã  Chicoutimi dispense des programmes d'Ã©tudes variÃ©s de niveaux baccalaurÃ©at, maitrise et doctorat" />
+	<META NAME="description" CONTENT="L'université du Québec à Chicoutimi dispense des programmes d'études variés de niveaux baccalauréat, maitrise et doctorat" />
 	<meta name="verify-v1" content="Pw/W6GMlRcZ6vmZf7cdynGUXwtSxA2q4PPLwxnOGkP4=" >
     <META NAME="robots" CONTENT="INDEX,FOLLOW" />
-<title>Portail des Ã©tudiants - UniversitÃ© du QuÃ©bec Ã  Chicoutimi</title>
+<title>Portail des étudiants - Université du Québec à Chicoutimi</title>
 <link href="http://www.uqac.ca/css/general.css" rel="stylesheet" type="text/css"  media="screen" />
 <link href="http://www.uqac.ca/css/niveau01.css" rel="stylesheet" type="text/css"  media="screen" />
 <link href="http://www.uqac.ca/css/etudiants.css" rel="stylesheet" type="text/css"  media="screen" />
@@ -51,9 +75,9 @@
 <div class="menuverttop"><a href="http://www.uqac.ca/uqac_en_bref/pour_nous_joindre.php" title="Nous joindre">Nous joindre</a></div> 
 <div class="menuverttop"><a href="http://www.uqac.ca/uqac_en_bref/a_propos_du_site/plan.php" title="Plan du site">Plan du site</a></div>
  
-<div class="menuverttop"><a href="http://repertoire.uqac.ca/" title="RÃ©pertoire tÃ©lÃ©phonique">RÃ©pertoire</a></div>
-<div class="menuverttop"><a href="http://bibliotheque.uqac.ca" title="BibliothÃ¨que">BibliothÃ¨que</a></div>
-<div class="menuverttop"><a href="http://www.uqac.ca/" title="Retour Ã  l'accueil">Accueil</a></div>
+<div class="menuverttop"><a href="http://repertoire.uqac.ca/" title="Répertoire téléphonique">Répertoire</a></div>
+<div class="menuverttop"><a href="http://bibliotheque.uqac.ca" title="Bibliothèque">Bibliothèque</a></div>
+<div class="menuverttop"><a href="http://www.uqac.ca/" title="Retour à l'accueil">Accueil</a></div>
 	 		</div>
 			
 
@@ -72,7 +96,7 @@
 	else
 	{
 		if (document.form_rech.txt_rech.value.length < 2)
-			alert ("Vous devez entrer plus de 2 caractÃ¨res pour la recherche...");
+			alert ("Vous devez entrer plus de 2 caractères pour la recherche...");
 		else
 		{	
 			if(document.form_rech.rb_type_rech[1].checked == true)
@@ -121,7 +145,7 @@ function focus_rech()
 
 <!--
 <span>
-<a href="http://www.uqac.ca/recherche" title="Recherche avancÃ©e">Recherche avancÃ©e</a>
+<a href="http://www.uqac.ca/recherche" title="Recherche avancée">Recherche avancée</a>
 </span>
 -->	
 			
@@ -129,7 +153,7 @@ function focus_rech()
 			
 		  	<div id="logo">
 						<h1>UQAC</h1>
-						 <h2>UniversitÃ© du QuÃ©bec Ã  Chicoutimi - </h2>
+						 <h2>Université du Québec à Chicoutimi - </h2>
 						   <h3>Libre de voir plus loin</h3>
 		    </div>
 						
@@ -150,10 +174,10 @@ function focus_rech()
 					 
 <!--miettes de pain-->
   <div id="miettes_de_pain">
-					  Vous Ãªtes ici :<br /> <a href="http://www.uqac.ca/">Accueil</a> 
+					  Vous êtes ici :<br /> <a href="http://www.uqac.ca/">Accueil</a> 
  > <strong>etudiants</strong>					  </div>
                       
- <h1 class="titre_portail">Ã‰tudiants</h1>
+ <h1 class="titre_portail">Étudiants</h1>
   <img src="entete_portail_etudiants.png" width="763" height="47" />
 
 
@@ -164,8 +188,8 @@ function focus_rech()
                       <h4><span>Clic rapide</span></h4>
 					  <ul>
 					  <li><a href="http://www.uqac.ca/direction_services/registraire/calendriers.php">Calendriers universitaires</a></li>
-					  <li><a href="courriel.html">Courrier Ã©lectronique</a></li>
-						<li><a href="http://repartiteur.uqac.ca/repartir_app/repartir.php?app=dossier_etudiant/ ">Dossier Ã©tudiant</a></li>
+					  <li><a href="courriel.html">Courrier électronique</a></li>
+						<li><a href="http://repartiteur.uqac.ca/repartir_app/repartir.php?app=dossier_etudiant/ ">Dossier étudiant</a></li>
 					  <li><a href="http://cours.uqac.ca/">Horaire des cours offerts </a></li>
                        
                       
@@ -176,7 +200,7 @@ function focus_rech()
     <div id="vidpromo">
 					  
 					  	<!--vous avez des questions-->
-					  <span>DÃ©couvrir l'UQAC </span> 
+					  <span>Découvrir l'UQAC </span> 
 					  <a href="http://www.uqac.ca/je_veux_etudier/video.php" target="_top"><span>Cliquez-ici !</span> </a>   
                       
     </div>
@@ -186,7 +210,7 @@ function focus_rech()
 					  
 					  	<!--vous avez des questions-->
 					  <span>Vous avez des questions? </span> 
-					  <a href="http://repertoire.uqac.ca/Fiche.aspx?id=IyYwKjUbURU1&link=1" target="repertoire"><span>Ã‰crivez-nous</span> </a>   
+					  <a href="http://repertoire.uqac.ca/Fiche.aspx?id=IyYwKjUbURU1&link=1" target="repertoire"><span>Écrivez-nous</span> </a>   
                       
     </div>
                          
@@ -235,9 +259,9 @@ function focus_rech()
 						  <li><a href="http://www.coopuqac.com/" target="_blank">Coop&eacute;rative &eacute;tudiante</a></li>
 						  <li><a href="http://sports.uqac.ca/">Pavillon sportif</a></li>
 					  	<li><a href="http://www.uqac.ca/departements/regroupements_programmes.php">Regroupement de programmes </a></li>
-						  <li><a href="http://sae.uqac.ca/">Services aux Ã©tudiants </a></li>
-						<li><a href="http://www.uqac.ca/direction_services/srf/">Service des ressources financiÃ¨res</a></li>
-						  <li><a href="http://www.uqac.ca/direction_services/sti/">Service des technologies<br /> de lâ€™information </a></li>
+						  <li><a href="http://sae.uqac.ca/">Services aux étudiants </a></li>
+						<li><a href="http://www.uqac.ca/direction_services/srf/">Service des ressources financières</a></li>
+						  <li><a href="http://www.uqac.ca/direction_services/sti/">Service des technologies<br /> de l’information </a></li>
 				  </ul>
 					
                     <br/>
@@ -246,9 +270,9 @@ function focus_rech()
                                 
 							 
                             
-                           <li><a href="http://formulaires.uqac.ca/locaux"> RÃ©servation de locaux </a></li> 
+                           <li><a href="http://formulaires.uqac.ca/locaux"> Réservation de locaux </a></li> 
 
-							<li><a href="http://www.uqac.ca/fers/formulaire-de-reservation/"> RÃ©servation Simoncouche</a></li>
+							<li><a href="http://www.uqac.ca/fers/formulaire-de-reservation/"> Réservation Simoncouche</a></li>
                             <li><a href="http://formulaires.uqac.ca/registraire/demande-de-documents-officiels-etudiant/">Demande de documents officiels </a></li>
 							 </ul></div>
                     
@@ -265,25 +289,25 @@ function focus_rech()
 						  
 					<ul>
                     	  <li><a href="http://www.uqac.ca//admissionenligne">Admission en ligne</a> </li>	
-					  <li><a href="http://mageuqac.com/bottin-des-assos/" target="_blank">Associations Ã©tudiantes</a> </li>
+					  <li><a href="http://mageuqac.com/bottin-des-assos/" target="_blank">Associations étudiantes</a> </li>
 					  <li><a href="http://www.uqac.ca/direction_services/sie/assurance_etudiant.php">Assurances</a></li>
                    <li><a href="http://blog.uqac.ca">Blogues de l'UQAC</a></li>
-					  <li><a href="http://sae.uqac.ca/aide-financiere/">Bourses et aide financiÃ¨re</a></li>
-					   <li><a href="http://www.uqac.ca/ccoe">Centre de la communication<br /> orale et Ã©crite</a></li> 
-					  <li><a href="http://www.uqac.ca/programmes/centres_etudes.php">Centres d'Ã©tudes universitaires</a> </li>
-                   <li><a href="http://www.uqac.ca/harcelement/">ComitÃ© contre le harcÃ¨lement et la violence</a></li>
-					  <li><a href="http://constellation.uqac.ca" target="_blank">Constellation</a> - Le dÃ©pÃ´t institutionnel</li>
+					  <li><a href="http://sae.uqac.ca/aide-financiere/">Bourses et aide financière</a></li>
+					   <li><a href="http://www.uqac.ca/ccoe">Centre de la communication<br /> orale et écrite</a></li> 
+					  <li><a href="http://www.uqac.ca/programmes/centres_etudes.php">Centres d'études universitaires</a> </li>
+                   <li><a href="http://www.uqac.ca/harcelement/">Comité contre le harcèlement et la violence</a></li>
+					  <li><a href="http://constellation.uqac.ca" target="_blank">Constellation</a> - Le dépôt institutionnel</li>
 					  <li><a href="http://www.uqac.ca/droitauteur/">Droit d'auteur</a></li>
-					   <li><a href="http://www.uqac.ca/direction_services/registraire/adm_inscriptions/frais_scolarite.php">Droits de scolaritÃ© et autres frais</a> </li>
-					   <li><a href="http://www.uqac.ca/international/echanges/">Ã‰tudes Ã  lâ€™Ã©tranger</a></li>
+					   <li><a href="http://www.uqac.ca/direction_services/registraire/adm_inscriptions/frais_scolarite.php">Droits de scolarité et autres frais</a> </li>
+					   <li><a href="http://www.uqac.ca/international/echanges/">Études à l’étranger</a></li>
       
 					 <li><a href="http://inuk.uqac.ca">Sport universitaire</a> </li>	
-					  <li><a href="http://www.uqac.ca/programmes/">Programmes d'Ã©tudes</a></li>					  
+					  <li><a href="http://www.uqac.ca/programmes/">Programmes d'études</a></li>					  
 					  <li><a href="http://www.uqac.ca/stages_et_emplois/">Stages et emplois</a></li>
 
 				  
-                  <!--<li><a href="http://surlaroute.uqac.ca">Sur la route</a>, <br/>blog de<br/> Justine LÃ©vesque</li>-->
-                     <li><a href="http://wprodl.uqac.ca/calcul_cout/index.html">Simulateur du calcul du coÃ»t d'un trimestre</a></li>
+                  <!--<li><a href="http://surlaroute.uqac.ca">Sur la route</a>, <br/>blog de<br/> Justine Lévesque</li>-->
+                     <li><a href="http://wprodl.uqac.ca/calcul_cout/index.html">Simulateur du calcul du coût d'un trimestre</a></li>
                   </ul>
 				  </div> <!--fin lien utiles-->
 				  
@@ -295,63 +319,63 @@ function focus_rech()
 		  <div id="col_4">
           			
 							  <div id="calendrier">
-								<h3>Dates Ã  retenir</h3>
+								<h3>Dates à retenir</h3>
                                 
 								 <div id="iframe_calendrier">	    
-					 <h6>Dimanche 05 fÃ©vrier</h6>
+					 <h6>Dimanche 05 février</h6>
 <ul>
-<li>Vision d'(en)semble, une exposition de la BoÃ®te Rouge Vif  |  Galerie L'Å’uvre de l'Autre&nbsp;<a href='http://www.uqac.ca/galerie/' target='_blank'>>>></a></li>
-<li>PÃ©riode de mise en candidature pour participer Ã  la 5e Ã©dition de lâ€™ UniversitÃ© dâ€™Ã©tÃ© sur la francophonie des AmÃ©riques qui se dÃ©roulera du 5 au 11 juin 2017.&nbsp;<a href='http://www.francophoniedesameriques.com/universitedete/participer-a-luniversite-dete/' target='_blank'>>>></a></li>
+<li>Vision d'(en)semble, une exposition de la Boîte Rouge Vif  |  Galerie L'Œuvre de l'Autre&nbsp;<a href='http://www.uqac.ca/galerie/' target='_blank'>>>></a></li>
+<li>Période de mise en candidature pour participer à la 5e édition de l’ Université d’été sur la francophonie des Amériques qui se déroulera du 5 au 11 juin 2017.&nbsp;<a href='http://www.francophoniedesameriques.com/universitedete/participer-a-luniversite-dete/' target='_blank'>>>></a></li>
 </ul>
-<h6>Lundi 06 fÃ©vrier</h6>
+<h6>Lundi 06 février</h6>
 <ul>
-<li>16 h&nbsp;&ndash;&nbsp;Rendez-vous numÃ©riques - Saguenay (Ã©vÃ©nement proposÃ© dans le cadre de la dÃ©marche de consultation citoyenne de la StratÃ©gie numÃ©rique du QuÃ©bec)  |  16 h Ã  20 h  |  Centre social&nbsp;<a href='https://www.facebook.com/events/248894338869971/' target='_blank'>>>></a></li>
+<li>16 h&nbsp;&ndash;&nbsp;Rendez-vous numériques - Saguenay (événement proposé dans le cadre de la démarche de consultation citoyenne de la Stratégie numérique du Québec)  |  16 h à 20 h  |  Centre social&nbsp;<a href='https://www.facebook.com/events/248894338869971/' target='_blank'>>>></a></li>
 </ul>
-<h6>Mardi 07 fÃ©vrier</h6>
+<h6>Mardi 07 février</h6>
 <ul>
-<li>RÃ©union CERC</li>
-<li>Exposition photographique prÃ©sentÃ©e par la quinziÃ¨me cohorte en Ã©co-conseil de lâ€™UQAC : Lâ€™Ã©nergie : oÃ¹ va le monde ? - BibliothÃ¨que de JonquiÃ¨re - Du 7 fÃ©vrier au 19 mars 2017</li>
+<li>Réunion CERC</li>
+<li>Exposition photographique présentée par la quinzième cohorte en éco-conseil de l’UQAC : L’énergie : où va le monde ? - Bibliothèque de Jonquière - Du 7 février au 19 mars 2017</li>
 </ul>
-<h6>Mercredi 08 fÃ©vrier</h6>
+<h6>Mercredi 08 février</h6>
 <ul>
-<li>Date limite de paiement des frais de scolaritÃ© - Hiver 2017&nbsp;<a href='http://www.uqac.ca/direction_services/registraire/calendrier/calendrier17h.pdf' target='_blank'>>>></a></li>
+<li>Date limite de paiement des frais de scolarité - Hiver 2017&nbsp;<a href='http://www.uqac.ca/direction_services/registraire/calendrier/calendrier17h.pdf' target='_blank'>>>></a></li>
 </ul>
-<h6>Jeudi 09 fÃ©vrier</h6>
+<h6>Jeudi 09 février</h6>
 <ul>
 <li>Date limite d'inscription au 31e Concours interuniversitaire de photographie&nbsp;<a href='https://www.facebook.com/events/1401168436564063/' target='_blank'>>>></a></li>
 <li>Date limite d'inscription au 8e Concours interuniversitaire de BD&nbsp;<a href='https://www.facebook.com/events/109570909507435/' target='_blank'>>>></a></li>
-<li>11 h&nbsp;&ndash;&nbsp;Test de groupe sanguin (proposÃ© par l'Association des bÃ©nÃ©voles du don de sang)  |  11 h Ã  14 h  |  Centre social</li>
-<li>11 h 30&nbsp;&ndash;&nbsp;CinÃ©Nikanite : Â« Avant les rues Â»  |  P2-8220
+<li>11 h&nbsp;&ndash;&nbsp;Test de groupe sanguin (proposé par l'Association des bénévoles du don de sang)  |  11 h à 14 h  |  Centre social</li>
+<li>11 h 30&nbsp;&ndash;&nbsp;CinéNikanite : « Avant les rues »  |  P2-8220
 </li>
 </ul>
-<h6>Vendredi 10 fÃ©vrier</h6>
+<h6>Vendredi 10 février</h6>
 <ul>
-<li>Date limite d'inscription Ã  UQAC en spectacle&nbsp;<a href='https://www.facebook.com/events/215742345530287/' target='_blank'>>>></a></li>
-<li>9 h&nbsp;&ndash;&nbsp;Atelier du CEE-UQAC : Â« L'art de bien monter ses prÃ©visions financiÃ¨res Â» avec Vicky Pronovost, Mallette
+<li>Date limite d'inscription à UQAC en spectacle&nbsp;<a href='https://www.facebook.com/events/215742345530287/' target='_blank'>>>></a></li>
+<li>9 h&nbsp;&ndash;&nbsp;Atelier du CEE-UQAC : « L'art de bien monter ses prévisions financières » avec Vicky Pronovost, Mallette
 
 &nbsp;<a href='http://www.uqac.ca/ceeuqac/index/chicoutimi/ateliers?iref=index%2Fateliers&id_lists_item6=183' target='_blank'>>>></a></li>
 </ul>
-<h6>Dimanche 12 fÃ©vrier</h6>
+<h6>Dimanche 12 février</h6>
 <ul>
-<li>Passation du test de franÃ§ais de l'UQAC (TF-UQAC)&nbsp;<a href='http://www.uqac.ca/direction_services/registraire/test_francais.php' target='_blank'>>>></a></li>
+<li>Passation du test de français de l'UQAC (TF-UQAC)&nbsp;<a href='http://www.uqac.ca/direction_services/registraire/test_francais.php' target='_blank'>>>></a></li>
 </ul>
-<h6>Mercredi 15 fÃ©vrier</h6>
+<h6>Mercredi 15 février</h6>
 <ul>
-<li>Conseil des Ã©tudes (UQ)</li>
+<li>Conseil des études (UQ)</li>
 </ul>
-<h6>Jeudi 16 fÃ©vrier</h6>
+<h6>Jeudi 16 février</h6>
 <ul>
-<li>19 h - ConfÃ©rence Le SÃ©nÃ©gal : une vÃ©ritable porte dâ€™entrÃ©e sur lâ€™Afrique - Salle Marguerite-Tellier, BibliothÃ¨que publique de Chicoutimi</li>
-<li>18 h 30&nbsp;&ndash;&nbsp;Maradon des Inuk (5e Ã©dition)  |  Pavillon sportif&nbsp;<a href='http://sports.uqac.ca/inuk/maradon-des-inuk/' target='_blank'>>>></a></li>
+<li>19 h - Conférence Le Sénégal : une véritable porte d’entrée sur l’Afrique - Salle Marguerite-Tellier, Bibliothèque publique de Chicoutimi</li>
+<li>18 h 30&nbsp;&ndash;&nbsp;Maradon des Inuk (5e édition)  |  Pavillon sportif&nbsp;<a href='http://sports.uqac.ca/inuk/maradon-des-inuk/' target='_blank'>>>></a></li>
 </ul>
-<h6>Mercredi 22 fÃ©vrier</h6>
+<h6>Mercredi 22 février</h6>
 <ul>
-<li>AssemblÃ©e des gouverneurs (UQ)</li>
-<li>11 h Ã  12 h - Midi-confÃ©rence en Ã©ducation: Lâ€™interdisciplinaritÃ© franÃ§ais-musique comme levier Ã  lâ€™apprentissage au primaire - ConfÃ©renciÃ¨re : AndrÃ©e Lessard, Ph. D., professeure au DÃ©partement des sciences de lâ€™Ã©ducation de lâ€™UQAC - Salon AndrÃ© DesgagnÃ© (local H1-1110)</li>
+<li>Assemblée des gouverneurs (UQ)</li>
+<li>11 h à 12 h - Midi-conférence en éducation: L’interdisciplinarité français-musique comme levier à l’apprentissage au primaire - Conférencière : Andrée Lessard, Ph. D., professeure au Département des sciences de l’éducation de l’UQAC - Salon André Desgagné (local H1-1110)</li>
 </ul>
-<h6>Vendredi 24 fÃ©vrier</h6>
+<h6>Vendredi 24 février</h6>
 <ul>
-<li>9 h&nbsp;&ndash;&nbsp;Atelier du CEE-UQAC Â« Le dÃ©veloppement de produit Â»&nbsp;<a href='http://www.uqac.ca/ceeuqac/index/chicoutimi/ateliers?iref=index%2Fateliers&id_lists_item6=288' target='_blank'>>>></a></li>
+<li>9 h&nbsp;&ndash;&nbsp;Atelier du CEE-UQAC « Le développement de produit »&nbsp;<a href='http://www.uqac.ca/ceeuqac/index/chicoutimi/ateliers?iref=index%2Fateliers&id_lists_item6=288' target='_blank'>>>></a></li>
 </ul>
 	
 					
@@ -363,7 +387,7 @@ function focus_rech()
 		 
 							
 							<div id="publicites_portails">
-				<!--publicitÃ©s-->
+				<!--publicités-->
 						             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -395,7 +419,7 @@ function focus_rech()
 
 <div id="pied">
 <span>
-<!--DerniÃ¨re mise Ã  jour de cette page :  - --><a href="http://www.uqac.ca/uqac_en_bref/a_propos_du_site/bienvenue.php">Ã€ propos du site Web institutionnel</a> -  Â© UQAC 2017.  Tous droits rÃ©servÃ©s.
+<!--Dernière mise à jour de cette page :  - --><a href="http://www.uqac.ca/uqac_en_bref/a_propos_du_site/bienvenue.php">À propos du site Web institutionnel</a> -  © UQAC 2017.  Tous droits réservés.
 </span>
 </div>
 
@@ -411,3 +435,5 @@ function focus_rech()
 	
 
  
+Fermeture du socket et du programme
+Fin du main
